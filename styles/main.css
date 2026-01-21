@@ -80,6 +80,7 @@ body {
   padding-bottom: 0.5rem; 
   margin-top: 0.5rem;
   order: 2;
+  font-weight: bold;
 }
 
 .emoji a {
