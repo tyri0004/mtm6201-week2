@@ -87,5 +87,6 @@ body {
     /* allows for emoji cards to be placed in 2 columns, 1 fraction apart */
     gap: 2rem; 
     /* allows for a space between each card */
+    max-width: 1100px; 
 
 }
