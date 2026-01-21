@@ -60,6 +60,7 @@ body {
 .siteheader h1{
     font-size: 2rem;
     margin-bottom: 2rem;
+    font-weight: bold;
 }
 .emoji {
   border: 1px solid #222;
