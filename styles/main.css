@@ -83,5 +83,9 @@ body {
 
 .emojis{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); 
+    /* allows for emoji cards to be placed in 2 columns, 1 fraction apart */
+    gap: 2rem; 
+    /* allows for a space between each card */
+
 }
