@@ -76,12 +76,16 @@ body {
   text-decoration: none;
   background-color: #781BAA;
   color: white;
-  padding: 1rem;
+  padding: 0.75 1rem;
   border-radius: 8px;
+  width: fit-content;
 }
 
 .icon {
   font-size: 4rem;
+  display: block; 
+  text-align: center;
+  /* allows for the emoji to be center by allowing the icon to behave as a block level element*/
 }
 /* css base ends */
 
@@ -96,4 +100,3 @@ body {
     max-width: 1100px; 
 }
 
-/* individual emoji cards */
