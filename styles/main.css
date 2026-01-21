@@ -53,6 +53,8 @@ table {
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #222;
+  padding: 2rem;
+  /* adding padding allows for all the content to be more centered to the page, allowing for more space */
 }
 
 .emoji {
