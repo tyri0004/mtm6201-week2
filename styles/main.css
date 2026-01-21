@@ -65,7 +65,7 @@ body {
 .emoji {
   border: 1px solid #222;
   border-radius: 8px;
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex; 
   flex-direction: column;
   gap: 1rem;
@@ -77,15 +77,19 @@ body {
   margin: 0;
   border-bottom: 2px solid #ccc;
   font-size: 1.4rem;
+  padding-bottom: 0.5rem; 
+  margin-top: 0.5rem;
+  order: 2;
 }
 
 .emoji a {
   text-decoration: none;
   background-color: #781BAA;
   color: white;
-  padding: 0.75 1rem;
+  padding: 0.75rem 1rem;
   border-radius: 8px;
   width: fit-content;
+  order: 4;
 }
 
 .icon {
@@ -93,6 +97,9 @@ body {
   display: block; 
   text-align: center;
   /* allows for the emoji to be center by allowing the icon to behave as a block level element*/
+  margin: 1rem 0; 
+  order: 1;
+  /* since im using flexbox i can order everything accordingly, so this allows me to place the icon first, then the rest of the content after to be placed properly */
 }
 /* css base ends */
 
@@ -105,5 +112,13 @@ body {
     gap: 2rem; 
     /* allows for a space between each card */
     max-width: 1100px; 
+    margin: 0 auto;
+}
+
+.emoji p{
+    line-height: 1.4; 
+    flex-grow: 1;
+    margin-top: 0.5rem; 
+    order: 3;
 }
 
