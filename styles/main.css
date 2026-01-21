@@ -56,7 +56,11 @@ body {
   padding: 2rem;
   /* adding padding allows for all the content to be more centered to the page, allowing for more space */
 }
-
+/* allows for the h1 to have the proper space at the bottom and to be the proper size according to the pic */
+.siteheader h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
 .emoji {
   border: 1px solid #222;
   border-radius: 8px;
