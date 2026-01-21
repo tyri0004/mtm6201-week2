@@ -59,7 +59,7 @@ body {
 /* allows for the h1 to have the proper space at the bottom and to be the proper size according to the pic */
 .siteheader h1{
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
     font-weight: bold;
 }
 .emoji {
@@ -78,7 +78,6 @@ body {
   border-bottom: 2px solid #ccc;
   font-size: 1.4rem;
   padding-bottom: 0.5rem; 
-  margin-top: 0.5rem;
   order: 2;
   font-weight: bold;
 }
@@ -87,9 +86,13 @@ body {
   text-decoration: none;
   background-color: #781BAA;
   color: white;
-  padding: 0.75rem 1rem;
+  padding: 1rem;
   border-radius: 8px;
-  width: fit-content;
+  display: block; 
+  /* adding block allowed me to control it as a block level element */
+  text-align: left;
+  align-self: stretch; 
+  /* using width:100%  would have made the button go outside of the card, so stretch allowed for it to look exactly like the image */
   order: 4;
 }
 
@@ -102,10 +105,6 @@ body {
   order: 1;
   /* since im using flexbox i can order everything accordingly, so this allows me to place the icon first, then the rest of the content after to be placed properly */
 }
-/* css base ends */
-
-/* layout for the emoji cards */
-
 .emojis{
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -118,7 +117,9 @@ body {
 
 .emoji p{
     line-height: 1.4; 
+    /* allows for space bettwen the lines of the paragraph content */
     flex-grow: 1;
+    /* flex grow forces the button to the bottom of the card even when the text lengths are different */
     margin-top: 0.5rem; 
     order: 3;
 }
